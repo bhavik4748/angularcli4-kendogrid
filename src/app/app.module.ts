@@ -7,6 +7,9 @@ import { GridModule } from '@progress/kendo-angular-grid';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+// ng- bootstrap
+import { AlertModule } from 'ngx-bootstrap';
+
 // Import the Animations module
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
@@ -32,7 +35,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     ButtonsModule,
-    GridModule
+    GridModule,
+    AlertModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
