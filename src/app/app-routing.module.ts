@@ -6,13 +6,16 @@ import { ScopeOfWorkComponent } from "app/portal/scope-of-work/scope-of-work.com
 import { DashboardComponent } from "app/dashboard/dashboard.component";
 
 const routes: Routes = [
+  { path: 'login', loadChildren: 'app/login/login.module#LoginModule' },
   { path: 'dashBoard', component: DashboardComponent },
   {
     path: 'portal', component: PortalComponent,
     children: [{ path: 'planWork', component: PlanWorkComponent },
     { path: 'scopeOfWork', component: ScopeOfWorkComponent },
     { path: '', redirectTo: 'planWork', pathMatch: 'full' }]
-  }
+  },
+  { path: '', redirectTo: 'login', pathMatch: 'full' },
+  { path: '**', redirectTo: 'login', pathMatch: 'full' }
 ];
 
 @NgModule({
