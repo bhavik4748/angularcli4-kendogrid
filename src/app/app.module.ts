@@ -19,6 +19,9 @@ import { PortalComponent } from './portal/portal.component';
 import { PlanWorkComponent } from './portal/plan-work/plan-work.component';
 import { ScopeOfWorkComponent } from './portal/scope-of-work/scope-of-work.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { AppStatusComponent } from './portal/app-status/app-status.component';
+import { CostAffidavitComponent } from './portal/cost-affidavit/cost-affidavit.component';
+import { StatementAndSignatureComponent } from './portal/statement-and-signature/statement-and-signature.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +29,10 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     PortalComponent,
     PlanWorkComponent,
     ScopeOfWorkComponent,
-    DashboardComponent
+    DashboardComponent,
+    AppStatusComponent,
+    CostAffidavitComponent,
+    StatementAndSignatureComponent
   ],
   imports: [
     BrowserModule,

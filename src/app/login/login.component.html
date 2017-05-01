@@ -1,3 +1,30 @@
-<p>
-  login works!
-</p>
+<div class="col-xs-12 col-sm-6 col-md-8">
+  <h1>Web Portal </h1>
+
+</div>
+<div class="col-xs-12 col-sm-6 col-md-4 pull-right login-form">
+  <div class="form-group t">
+    <label for="username" class="font-16">Username</label>
+    <input type="text" name="username" id="txtLoginUserName" placeholder="User Name" class="form-control" required />
+
+  </div>
+  <div class="form-group">
+    <label for="password" class="font-16">Password</label>
+    <input type="password" name="password" id="txtLoginPassword" placeholder="Password" class="form-control" required />
+
+  </div>
+  <div class="form-actions">
+    <button type="button" (click)='loginFunction()' class="btn btn-primary btn-block">Login</button>
+
+    <div>
+      <!--Not registered? Create an account now.-->
+      <div>
+        <span class="btn btn-link" ng-click="myAccessDisplay()" style="font-size: 16px;">Can't access your account?</span>
+      </div>
+
+
+      <!--Can't access your account?-->
+    </div>
+    <!--<a href="#/register" class="btn btn-link">Register</a>-->
+  </div>
+</div>
