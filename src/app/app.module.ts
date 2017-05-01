@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { GridModule } from '@progress/kendo-angular-grid';
+import { TabsModule } from 'ngx-bootstrap';
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -42,7 +44,8 @@ import { StatementAndSignatureComponent } from './portal/statement-and-signature
     BrowserAnimationsModule,
     ButtonsModule,
     GridModule,
-    AlertModule.forRoot()
+    AlertModule.forRoot(),
+    TabsModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
