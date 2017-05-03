@@ -10,11 +10,11 @@ export class LoginComponent implements OnInit {
 
   constructor() { }
 
-  const routes: Routes;
+  //  const routes: Routes;
 
-  loginFunction() {
-    this.router.navigate(['/dashBoard']);
-  }
+  //  loginFunction() {
+  //  this.router.navigate(['/dashBoard']);
+  // }
 
   ngOnInit() {
   }
