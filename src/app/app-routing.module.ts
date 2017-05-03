@@ -18,8 +18,8 @@ const routes: Routes = [
     { path: 'statementAndSignature', component: StatementAndSignatureComponent },
     { path: '', redirectTo: 'planWork', pathMatch: 'full' }]
   },
-  { path: '', redirectTo: 'login', pathMatch: 'full' },
-  { path: '**', redirectTo: 'login', pathMatch: 'full' }
+  { path: '', redirectTo: 'dashBoard', pathMatch: 'full' },
+  { path: '**', redirectTo: 'dashBoard', pathMatch: 'full' }
 ];
 
 @NgModule({
