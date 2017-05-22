@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import { Routes, RouterModule, Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-login',
@@ -7,16 +8,17 @@ import { Routes, RouterModule } from '@angular/router';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
-
-  constructor() { }
+  constructor(private router: Router) { }
 
   //  const routes: Routes;
 
-  //  loginFunction() {
-  //  this.router.navigate(['/dashBoard']);
-  // }
+  loginFunction() {
+    this.router.navigate(['/dashBoard']);
+  }
 
   ngOnInit() {
   }
+
+
 
 }

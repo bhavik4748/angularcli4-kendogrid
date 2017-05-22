@@ -19,7 +19,7 @@ const routes: Routes = [
     { path: '', redirectTo: 'planWork', pathMatch: 'full' }]
   },
   { path: '', redirectTo: 'dashBoard', pathMatch: 'full' },
-  { path: '**', redirectTo: 'dashBoard', pathMatch: 'full' }
+  { path: '**', redirectTo: 'login', pathMatch: 'full' }
 ];
 
 @NgModule({
