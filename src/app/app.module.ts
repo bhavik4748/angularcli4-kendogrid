@@ -24,6 +24,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { AppStatusComponent } from './portal/app-status/app-status.component';
 import { CostAffidavitComponent } from './portal/cost-affidavit/cost-affidavit.component';
 import { StatementAndSignatureComponent } from './portal/statement-and-signature/statement-and-signature.component';
+import { WelcomeComponent } from './welcome/welcome.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { StatementAndSignatureComponent } from './portal/statement-and-signature
     DashboardComponent,
     AppStatusComponent,
     CostAffidavitComponent,
-    StatementAndSignatureComponent
+    StatementAndSignatureComponent,
+    WelcomeComponent
   ],
   imports: [
     BrowserModule,
