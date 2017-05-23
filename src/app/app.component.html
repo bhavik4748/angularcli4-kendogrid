@@ -1,8 +1,31 @@
-<nav class="navbar navbar-light navbar-toggleable-md">
-  <a [routerLink]="['/welcome']">Welcome</a>
-  <a [routerLink]="['/login']">Login</a>
-  <a [routerLink]="['/dashBoard']">Dashboard</a>
-  <a [routerLink]="['/portal']">Portal</a>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <ul class="nav navbar-nav">
+      <li routerLinkActive="active">
+        <a [routerLink]="['/welcome']">Welcome</a>
+      </li>
+    </ul>
+
+    <ul class="nav navbar-nav">
+      <li routerLinkActive="active">
+        <a [routerLink]="['/dashBoard']">Dashboard</a>
+      </li>
+    </ul>
+
+    <ul class="nav navbar-nav">
+      <li routerLinkActive="active">
+        <a [routerLink]="['/portal']">Portal</a>
+      </li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li routerLinkActive="active">
+        <a [routerLink]="['/login']">Login</a>
+      </li>
+    </ul>
+  </div>
+
 </nav>
+
+
 Welcome, user
 <router-outlet></router-outlet>
