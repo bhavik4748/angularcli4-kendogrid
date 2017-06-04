@@ -1,3 +1,7 @@
+This project is for learning new features of Angular CLI and Angular 4.
+I have also tried to implements some E2E tests. (6-3-2017)
+
+
 # Angular4Cli
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
