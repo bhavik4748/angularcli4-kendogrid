@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+// import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { GridModule } from '@progress/kendo-angular-grid';
 import { TabsModule } from 'ngx-bootstrap';
@@ -40,7 +40,7 @@ import { WelcomeComponent } from './welcome/welcome.component';
   ],
   imports: [
     BrowserModule,
-    FormsModule,
+    // FormsModule,
     HttpModule,
     AppRoutingModule,
     BrowserAnimationsModule,
