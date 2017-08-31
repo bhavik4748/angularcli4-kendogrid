@@ -4,6 +4,10 @@ import { NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
 import { GridModule } from '@progress/kendo-angular-grid';
 import { TabsModule } from 'ngx-bootstrap';
+// used to create fake backend
+import { fakeBackendProvider } from './helpers/index';
+import { MockBackend, MockConnection } from '@angular/http/testing';
+import { BaseRequestOptions } from '@angular/http';
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -11,7 +15,8 @@ import { AppComponent } from './app.component';
 
 // ng- bootstrap
 import { AlertModule } from 'ngx-bootstrap';
-
+import { AuthenticationService } from './service/authentication.service';
+import { AlertService } from './service/alert.service';
 // Import the Animations module
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
@@ -49,7 +54,9 @@ import { WelcomeComponent } from './welcome/welcome.component';
     AlertModule.forRoot(),
     TabsModule.forRoot()
   ],
-  providers: [],
+  providers: [AlertService,
+    AuthenticationService,
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
