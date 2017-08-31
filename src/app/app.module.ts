@@ -54,8 +54,12 @@ import { WelcomeComponent } from './welcome/welcome.component';
     AlertModule.forRoot(),
     TabsModule.forRoot()
   ],
-  providers: [AlertService,
+  providers: [
+    AlertService,
     AuthenticationService,
+    fakeBackendProvider,
+    MockBackend,
+    BaseRequestOptions
   ],
   bootstrap: [AppComponent]
 })
