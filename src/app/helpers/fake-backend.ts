@@ -77,6 +77,7 @@ export function fakeBackendFactory(backend: MockBackend, options: BaseRequestOpt
             // create user
             if (connection.request.url.endsWith('/api/users') && connection.request.method === RequestMethod.Post) {
                 // get new user object from post body
+                console.log("creating user: ");
                 let newUser = JSON.parse(connection.request.getBody());
 
                 // validation
@@ -89,7 +90,7 @@ export function fakeBackendFactory(backend: MockBackend, options: BaseRequestOpt
                 newUser.id = users.length + 1;
                 users.push(newUser);
                 localStorage.setItem('users', JSON.stringify(users));
-
+                console.log("user created: " + JSON.stringify(users));
                 // respond 200 OK
                 connection.mockRespond(new Response(new ResponseOptions({ status: 200 })));
 

@@ -16,6 +16,7 @@ import { AppComponent } from './app.component';
 // ng- bootstrap
 import { AlertModule } from 'ngx-bootstrap';
 import { AuthenticationService } from './service/authentication.service';
+import { UserService } from './service/user.service';
 import { AlertService } from './service/alert.service';
 // Import the Animations module
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -57,6 +58,7 @@ import { WelcomeComponent } from './welcome/welcome.component';
   providers: [
     AlertService,
     AuthenticationService,
+    UserService,
     fakeBackendProvider,
     MockBackend,
     BaseRequestOptions

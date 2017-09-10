@@ -7,7 +7,7 @@ import { AlertService } from '../service/alert.service';
 
 @Component({
   moduleId: module.id,
-  selector: 'app-login',
+  // selector: 'app-login',
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
