@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-// import { NgForm } from '@angular/forms';
+import { AuthenticationService } from '../service/authentication.service';
 import { FormsModule } from '@angular/forms';
 import { LoginRoutingModule } from './login-routing.module';
 import { LoginComponent } from './login.component';
@@ -11,6 +11,9 @@ import { LoginComponent } from './login.component';
     LoginRoutingModule,
     FormsModule
   ],
-  declarations: [LoginComponent]
+  declarations: [LoginComponent],
+  providers: [
+    AuthenticationService
+     ],
 })
 export class LoginModule { }

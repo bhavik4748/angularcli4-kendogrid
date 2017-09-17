@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { UserService } from '../service/user.service';
 import { RegisterRoutingModule } from './register-routing.module';
 import { RegisterComponent } from './register.component';
 
@@ -10,6 +11,9 @@ import { RegisterComponent } from './register.component';
     RegisterRoutingModule,
     FormsModule
   ],
-  declarations: [RegisterComponent]
+  declarations: [RegisterComponent],
+  providers: [
+    UserService
+  ],
 })
 export class RegisterModule { }

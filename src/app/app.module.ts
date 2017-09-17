@@ -57,8 +57,8 @@ import { WelcomeComponent } from './welcome/welcome.component';
   ],
   providers: [
     AlertService,
-    AuthenticationService,
-    UserService,
+    // AuthenticationService,
+    // UserService,
     fakeBackendProvider,
     MockBackend,
     BaseRequestOptions
