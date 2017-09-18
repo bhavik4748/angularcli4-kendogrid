@@ -41,18 +41,29 @@
     "@angular/compiler-cli": "^4.0.0",
     "@types/jasmine": "2.5.38",
     "@types/node": "~6.0.60",
-    "codelyzer": "~2.0.0",
-    "jasmine-core": "~2.5.2",
-    "jasmine-spec-reporter": "~3.2.0",
-    "karma": "~1.4.1",
-    "karma-chrome-launcher": "~2.0.0",
-    "karma-cli": "~1.0.1",
+    "codelyzer": "^2.0.0",
+    "jasmine-core": "^2.5.2",
+    "jasmine-spec-reporter": "^3.2.0",
+    "karma": "^1.4.1",
+    "karma-chrome-launcher": "^2.0.0",
+    "karma-cli": "^1.0.1",
     "karma-coverage-istanbul-reporter": "^0.2.0",
-    "karma-jasmine": "~1.1.0",
+    "karma-jasmine": "^1.1.0",
     "karma-jasmine-html-reporter": "^0.2.2",
-    "protractor": "~5.1.0",
-    "ts-node": "~2.0.0",
-    "tslint": "~4.5.0",
-    "typescript": "~2.2.0"
-  }
+    "protractor": "^5.1.0",
+    "ts-node": "^2.0.0",
+    "tslint": "^4.5.0",
+    "typescript": "^2.2.0"
+  },
+  "description": "This project is for learning new features of Angular CLI and Angular 4. I have also tried to implements some E2E tests. (6-3-2017)",
+  "main": "karma.conf.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bhavik4748/angularcli4-kendogrid.git"
+  },
+  "author": "Bhavik Gosrani",
+  "bugs": {
+    "url": "https://github.com/bhavik4748/angularcli4-kendogrid/issues"
+  },
+  "homepage": "https://github.com/bhavik4748/angularcli4-kendogrid#readme"
 }
