@@ -14,9 +14,9 @@ const routes: Routes = [
   { path: 'welcome', component: WelcomeComponent },
   { path: 'login', loadChildren: 'app/login/login.module#LoginModule' },
   { path: 'register', loadChildren: 'app/register/register.module#RegisterModule' },
-  { path: 'dashBoard', component: DashboardComponent, canActivate: [AuthGuard] },
+  { path: 'dashBoard', canActivate: [AuthGuard], component: DashboardComponent },
   {
-    path: 'portal', component: PortalComponent, canActivate: [AuthGuard],
+    path: 'portal', canActivate: [AuthGuard], component: PortalComponent,
     children: [{ path: 'planWork', component: PlanWorkComponent },
     { path: 'scopeOfWork', component: ScopeOfWorkComponent },
     { path: 'costAffidavit', component: CostAffidavitComponent },
@@ -29,6 +29,9 @@ const routes: Routes = [
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
+  providers: [
+    AuthGuard
+  ]
 })
 export class AppRoutingModule { }

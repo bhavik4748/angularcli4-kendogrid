@@ -58,7 +58,7 @@ import { WelcomeComponent } from './welcome/welcome.component';
   ],
   providers: [
     AlertService,
-    // AuthenticationService,
+    AuthenticationService,
     // UserService,
     AuthGuard,
     fakeBackendProvider,
