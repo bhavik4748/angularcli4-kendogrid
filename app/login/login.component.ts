@@ -40,7 +40,6 @@ export class LoginComponent implements OnInit {
     this.authService.login(this.model.username, this.model.password)
       .subscribe(
       data => {
-        console.log('Login User' +  this.authService.isUserLoggedIn());
         this.router.navigate(['/dashBoard']);
       },
       error => {
