@@ -13,6 +13,7 @@ import { WelcomeComponent } from "app/welcome/welcome.component";
 const routes: Routes = [
   { path: 'welcome', component: WelcomeComponent },
   { path: 'login', loadChildren: 'app/login/login.module#LoginModule' },
+  { path: 'logout', loadChildren: 'app/logout/logout.module#LogoutModule' },
   { path: 'register', loadChildren: 'app/register/register.module#RegisterModule' },
   { path: 'dashBoard', canActivate: [AuthGuard], component: DashboardComponent },
   {

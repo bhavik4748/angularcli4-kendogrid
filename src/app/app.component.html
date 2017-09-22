@@ -17,9 +17,14 @@
         <a id="appPortalLink" [routerLink]="['/portal']">Portal</a>
       </li>
     </ul>
-    <ul class="nav navbar-nav navbar-right">
+    <ul class="nav navbar-nav navbar-right" *ngIf="loginLabelFunc()">
       <li routerLinkActive="active">
         <a id="appLoginLink" [routerLink]="['/login']">Login</a>
+      </li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right" *ngIf="!loginLabelFunc()">
+      <li routerLinkActive="active">
+        <a id="appLoginLink" [routerLink]="['/logout']">Logout</a>
       </li>
     </ul>
   </div>

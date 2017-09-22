@@ -4,6 +4,8 @@ import { Routes, RouterModule, Router } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { AuthenticationService } from '../service/authentication.service';
 import { AlertService } from '../service/alert.service';
+import { AppComponent } from 'app/app.component';
+
 
 @Component({
   moduleId: module.id,
@@ -18,7 +20,7 @@ export class LoginComponent implements OnInit {
   returnUrl: string;
 
 
-  constructor(private router: Router, private authService: AuthenticationService, private alertService: AlertService) {
+  constructor(private router: Router, private authService: AuthenticationService, private alertService: AlertService, private appComp: AppComponent) {
 
   }
 
@@ -40,7 +42,8 @@ export class LoginComponent implements OnInit {
     this.authService.login(this.model.username, this.model.password)
       .subscribe(
       data => {
-        console.log('Login User' +  this.authService.isUserLoggedIn());
+        console.log('Login User' + this.authService.isUserLoggedIn());
+        this.appComp.onLoginSuccess();
         this.router.navigate(['/dashBoard']);
       },
       error => {

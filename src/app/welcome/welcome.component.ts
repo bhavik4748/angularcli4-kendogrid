@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { AuthenticationService } from '../service/authentication.service';
+import { AppComponent } from '../app.component';
 
 @Component({
   selector: 'app-welcome',
@@ -8,9 +10,11 @@ import { Router } from '@angular/router';
 })
 export class WelcomeComponent implements OnInit {
 
-  constructor(private router: Router) { }
+  constructor(private router: Router, private auth: AuthenticationService, private appCom: AppComponent) { }
 
   ngOnInit() {
+    this.auth.logout();
+    this.appCom.onLogoutSuccess();
   }
 
   loginFunction() {
