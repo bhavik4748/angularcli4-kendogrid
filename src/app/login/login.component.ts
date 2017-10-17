@@ -37,8 +37,6 @@ export class LoginComponent implements OnInit {
 
   loginFunction() {
     this.loading = true;
-    console.log(this.model.username);
-    console.log(this.model.password);
     this.authService.login(this.model.username, this.model.password)
       .subscribe(
       data => {
