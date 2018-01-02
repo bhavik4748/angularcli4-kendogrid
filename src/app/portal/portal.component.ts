@@ -6,10 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./portal.component.css']
 })
 export class PortalComponent implements OnInit {
+  position: boolean;
 
   constructor() { }
 
   ngOnInit() {
+    this.position = false;
   }
 
+  onClick() {
+    alert('Save Successfully!');
+  }
 }

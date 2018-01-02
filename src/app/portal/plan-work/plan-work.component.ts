@@ -6,10 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./plan-work.component.css']
 })
 export class PlanWorkComponent implements OnInit {
-
+ 
   constructor() { }
 
   ngOnInit() {
+    
   }
 
 }

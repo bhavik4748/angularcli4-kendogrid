@@ -3,13 +3,15 @@ import { AuthenticationService } from './service/authentication.service';
 import { Router } from '@angular/router'
 
 @Component({
-  selector: 'app-root',
+  selector: '[app-root]',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
   title = 'app works!';
   private loginFlag: boolean = true;;
+
+
 
   constructor(private auth: AuthenticationService, private router: Router) { }
 
